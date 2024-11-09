@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="range"] {
+    @apply appearance-none bg-gray-200 h-2 rounded-lg;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    @apply appearance-none w-5 h-5 bg-blue-500 rounded-full cursor-pointer hover:bg-blue-600 transition-colors duration-200;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    @apply appearance-none w-5 h-5 bg-blue-500 rounded-full cursor-pointer border-0 hover:bg-blue-600 transition-colors duration-200;
+  }
+}
